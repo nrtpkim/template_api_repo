@@ -1,0 +1,23 @@
+version: '3.8'
+
+networks:
+  dia_fr_prod_net:
+    driver: bridge
+
+volumes: 
+  dia_fr_prod_persistence_mysql:
+
+services:
+  mysql:
+    container_name: mysql.$DOMAIN
+    
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: dIAFaceRecognition2020
+    ports:
+      - 3306:3306
+    command: ['mysqld', '--character-set-server=utf8', '--collation-server=utf8_unicode_ci']
+    volumes:
+      - dia_fr_prod_persistence_mysql:/var/lib/mysql:rw
+    networks: 
+      - dia_fr_prod_net

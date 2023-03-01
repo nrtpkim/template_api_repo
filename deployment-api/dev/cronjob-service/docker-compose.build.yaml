@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  cronjob-service:
+    build:
+      context: ../../../
+      dockerfile: ./deployment-api/dev/cronjob-service/build-image/Dockerfile
+    image: $IMAGE_NAME/cronjob-service:$VERSION

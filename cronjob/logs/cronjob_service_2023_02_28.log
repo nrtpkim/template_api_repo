@@ -1,0 +1,6 @@
+2023-02-28 18:25:42,646 | INFO -> start cronjob_service 
+2023-02-28 18:31:45,944 | INFO -> start cronjob_service --> It must be 6, nrtp.dev = 5, nrtp.test = 1, empty = 0 on 03.00
+2023-03-01 03:00:00,133 | INFO -> Delete index: empty_index_test
+2023-03-01 03:00:00,166 | INFO -> Delete index: nrtp.dev@gmail.com
+2023-03-01 03:00:00,201 | INFO -> Delete index: nrtp.test@gmail.com
+2023-03-01 03:00:00,202 | INFO -> all infomation: {'empty_index_test': 0, 'nrtp.dev@gmail.com': 5, 'nrtp.test@gmail.com': 1, 'summary': 6}

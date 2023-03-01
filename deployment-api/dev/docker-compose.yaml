@@ -1,0 +1,32 @@
+version: '3.8'
+
+networks:
+  dia_fr_api_dev_net:
+    driver: bridge
+
+volumes:
+  dia_fr_prod_persistence_mysql:
+
+services:
+  ### AI layer
+  ## AI Service
+
+  ## cronjob
+  cronjob-service:
+    extends:
+      file: cronjob-service/docker-compose.yaml
+      service: cronjob-service
+    restart: always
+
+
+  ### Persistence layer
+  ## Database
+  database_mysql:
+    extends:
+      file: databases/mysql/docker-compose.yaml
+      service: mysql
+    restart: always
+
+  ## Elasticsearch
+
+  ## Kibana

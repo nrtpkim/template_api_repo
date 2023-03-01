@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  ## AI service
+  # ai_service:
+ 
+
+  ## Cronjob service
+  cronjob-service:
+    extends:
+      file: cronjob-service/docker-compose.build.yaml
+      service: cronjob-service
+
+
+
+
+
+
+
