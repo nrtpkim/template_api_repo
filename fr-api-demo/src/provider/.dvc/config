@@ -1,0 +1,2 @@
+['remote "s3"']
+    url = s3://dia-dvc/real-time-face-recognition/
