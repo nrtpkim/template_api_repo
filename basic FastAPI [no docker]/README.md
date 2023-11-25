@@ -1,6 +1,4 @@
 # basic FastAPI [no docker]
-note:
-- still not finish
 
 
 ## howa to run

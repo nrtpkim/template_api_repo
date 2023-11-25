@@ -1,4 +1,6 @@
-# basic FastAPI [no docker]
+# basic FastAPI + auth [no docker] inprogress
+note:
+- still not finish
 
 ## howa to run
 ```
