@@ -1,0 +1,12 @@
+/build
+/dist
+*.pyc
+__pycache__/
+.DS_Store
+*.log
+*.csv
+*.jpg
+.ipynb_checkpoints
+/asset/nist/*
+*.c
+*.so

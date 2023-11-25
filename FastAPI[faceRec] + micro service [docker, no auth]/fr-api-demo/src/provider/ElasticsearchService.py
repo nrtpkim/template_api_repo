@@ -9,6 +9,10 @@ logger = logging.getLogger('AI_Service')
 
 class ElasticsearchService:
     def __init__(self) -> None:
+
+        print(get_settings().ELASTIC_ENDPOINT)
+        print(get_settings().ELASTIC_PASSWORD)
+
         self.es = Elasticsearch(
                 hosts=[get_settings().ELASTIC_ENDPOINT],
                 http_auth=(get_settings().ELASTIC_USERNAME, get_settings().ELASTIC_PASSWORD),
