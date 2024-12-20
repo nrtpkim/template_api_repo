@@ -1,0 +1,13 @@
+version: '3.8'
+
+# networks:
+#   dia_fr_api_dev_net:
+#     driver: bridge
+
+services:
+  api-test:
+    image: test_api
+    container_name: test_api_service
+    command: bash -c "python main.py"
+    ports:
+      - "8080:8080"

@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  test-api:
+    build:
+      context: ../
+      dockerfile: ./deployment-api/Dockerfile
+    image: test_api
