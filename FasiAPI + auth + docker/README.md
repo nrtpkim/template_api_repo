@@ -2,12 +2,11 @@
 1. Have FastAPI on port `8080` in docker image
 
 2. Set Up GCP
-2.1 Enable required services
-`gcloud services enable run.googleapis.com`
-2.2 Authenticate with your GCP account
-`gcloud auth login`
-2.3 set the active project
-`gcloud config set project [PROJECT_ID]`
+2.1 Enable required services `gcloud services enable run.googleapis.com`
+
+2.2 Authenticate with your GCP account `gcloud auth login`
+
+2.3 set the active project `gcloud config set project [PROJECT_ID]`
 
 3. Push Docker Image to Artifact Registry
 3.1 Create an Artifact Registry repository:
