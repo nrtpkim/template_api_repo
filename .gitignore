@@ -10,3 +10,5 @@ __pycache__/
 /asset/nist/*
 *.c
 *.so
+
+*.json

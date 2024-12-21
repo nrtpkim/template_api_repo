@@ -22,12 +22,6 @@ print(f"Identity Token: {identity_token}")
 
 
 
-
-
-
-
-import requests
-
 # Cloud Run service URL
 cloud_run_url = "https://kim-test-api-service-560622642415.asia-southeast1.run.app/api-key-auth?val_1=123&val_2=456"
 
