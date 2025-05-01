@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  api-test:
+    image: test_api
+    container_name: test_api_service
+    command: bash -c "python main.py"
+    volumes:
+      - ../:/app/
+    ports:
+      - "8080:8080"
+    env_file:
+      - ../dev.env
